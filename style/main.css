@@ -1,0 +1,170 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: lightskyblue !important;
+  background-image: linear-gradient(to bottom, rgb(179, 236, 255), rgb(0, 134, 230));
+  height: 1500px;
+  overflow-x: hidden !important;
+}
+
+.font {
+  font-family: Gabriola, Times, serif;
+}
+
+.img-fluid {
+  max-width: 300px;
+  max-height: 40px;
+  margin-bottom: 10px;
+}
+
+nav {
+  box-shadow: 0 5px 5px 0;
+  background-color: lightskyblue;
+  border-radius: 0% !important;
+  position: sticky;
+} 
+
+nav.sticky {
+  /* position: fixed; */
+  top: 0;
+}
+
+
+.dropdown {
+  position: relative;
+  float: left;
+}
+
+.nav-menu-hover {
+  display: none;
+  box-shadow: 5px 5px 5px 0px;
+  padding: 10px;
+  margin: 5px;
+  position: absolute;
+  background-color: lightskyblue;
+}
+
+.navbar-right{
+  float: right;
+}
+
+
+.dropdown:hover .nav-menu-hover {
+  transition: 0.9s;
+  display: inline;
+  top: 30px;
+  left: -15px
+} 
+
+
+
+
+
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black !important;
+  text-decoration: underline !important;
+  letter-spacing: 1px;
+  transition: 0.9s;
+}
+
+a:after {transition: 0.9s;}
+
+a {
+  text-decoration: none;
+  /* white-space: normal; cursor: pointer;  */
+  font-size: 3em;
+  color: darkred !important;
+}
+
+
+.nav-link {
+  margin-right: 20px;
+  align-content: center;
+  position: relative;
+}
+
+.navbar-right {
+  float: right !important;
+  right: 0 !important;
+  position: absolute;
+  padding-right: 10px;
+}
+
+.icon-bar {
+  border: 1px solid black !important;
+}
+
+
+@media screen and (max-width: 767px)  {
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  nav {
+    position: sticky;
+    overflow: auto;
+  }
+
+  .collapse {
+    overflow: hidden;
+    margin: 0 0 auto 0;
+    width: 100% !important;
+  }
+
+  .collapse a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .collapse:not(.show) {
+    display: inline;
+    overflow: hidden;
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 10%;
+  }
+
+  .dropdown {float: none;}
+
+  .img-fluid {
+    max-width: 80%;
+  }
+
+  ul.navbar-right {display: none;}
+
+  .nav-menu-hover {
+    position: relative;
+    /* display: inline-block; */
+  }
+
+  .navbar-right {
+    /* float: right !important;
+    right: 0 !important; */
+    position: absolute;
+  }
+
+
+  ul.navbar-right {
+    display: inline;
+}
+
+}
+
