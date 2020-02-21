@@ -4,9 +4,9 @@ html {
 }
 
 body {
-  background-color: lightskyblue !important;
+  background-color: lightskyblue;
   background-image: linear-gradient(to bottom, rgb(179, 236, 255), rgb(0, 134, 230));
-  height: 1500px;
+  height: 1800px;
   overflow-x: hidden !important;
 }
 
@@ -14,6 +14,54 @@ body {
   font-family: Gabriola, Times, serif;
 }
 
+.jumbotron {
+  background-color: lightskyblue;
+  box-shadow: 0 5px 5px 0;
+  border-radius: 0 0 10px 10px !important;
+  height: 700px;
+  animation: animation 20s infinite;
+  -webkit-animation: animation 10s infinite;
+  -moz-animation:    animation 10s infinite;
+  -o-animation:      animation 10s infinite;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes animation {
+  0%  {background-image: url('/assets/jumbotron/bristol.jfif'); transform:scale(1); opacity: 1.0;}
+  10%  {background-image: url('/assets/jumbotron/bristol.jfif'); transform:scale(1); }
+  25% {background-image: url('/assets/jumbotron/calgary.jfif'); transform:scale(1);}
+  40% {background-image: url('/assets/jumbotron/sanfransisco.jfif'); transform:scale(1);}
+  60% {background-image: url('/assets/jumbotron/london.jfif'); transform:scale(1);}
+  80% {background-image: url('/assets/jumbotron/losAngeles.jfif'); transform:scale(1);}
+  95% {background-image: url('/assets/jumbotron/cleveland.jfif'); transform:scale(1);}
+  100% {background-image: url('/assets/jumbotron/bristol.jfif'); transform:scale(1); }
+}
+
+.jumbotron-opaque {
+  background-color: white !important;
+  padding: 40% !important;
+  border: 2px solid black !;
+}
+
+.jumbotron .container-fluid {
+  width: 100%;
+  margin: 2%;
+  padding: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: lightskyblue;
+  opacity: 0.8;
+}
+
+.jumbotron p {
+  font-size: 25px;
+  font-weight: 700 !important;
+}
+
+
+/* header navabar logo image  */
 .img-fluid {
   max-width: 300px;
   max-height: 40px;
@@ -23,7 +71,7 @@ body {
 nav {
   box-shadow: 0 5px 5px 0;
   background-color: lightskyblue;
-  border-radius: 0% !important;
+  border-radius: 0 !important;
   position: sticky;
 } 
 
@@ -167,4 +215,3 @@ a {
 }
 
 }
-
