@@ -7,7 +7,7 @@ body {
   background-color: lightskyblue;
   background-image: linear-gradient(to bottom, rgb(179, 236, 255), rgb(0, 134, 230));
   height: 1800px;
-  overflow-x: hidden !important;
+  overflow: auto;
 }
 
 .font {
@@ -39,11 +39,6 @@ body {
   100% {background-image: url('/assets/jumbotron/bristol.jfif'); transform:scale(1); }
 }
 
-.jumbotron-opaque {
-  background-color: white !important;
-  padding: 40% !important;
-  border: 2px solid black !;
-}
 
 .jumbotron .container-fluid {
   width: 100%;
@@ -72,12 +67,11 @@ nav {
   box-shadow: 0 5px 5px 0;
   background-color: lightskyblue;
   border-radius: 0 !important;
-  position: sticky;
 } 
 
-nav.sticky {
-  /* position: fixed; */
-  top: 0;
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
 }
 
 
