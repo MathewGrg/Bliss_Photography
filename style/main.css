@@ -6,7 +6,7 @@ html {
 body {
   background-color: lightskyblue;
   background-image: linear-gradient(to bottom, rgb(179, 236, 255), rgb(0, 134, 230));
-  /* height: 1800px; */
+  height: 1800px;
   overflow: auto;
 }
 
@@ -57,6 +57,9 @@ body {
   font-weight: 700 !important;
 }
 
+/* --------------------------------------------------------------------------------- */
+/* ---------------------------  nav bar  ------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
 
 /* header navabar logo image  */
 .img-fluid {
@@ -89,6 +92,7 @@ nav {
   margin: 5px;
   position: absolute;
   background-color: lightskyblue;
+  transition: 0.5s;
 }
 
 .navbar-right{
@@ -97,16 +101,10 @@ nav {
 
 
 .dropdown:hover .nav-menu-hover {
-  transition: 0.9s;
   display: inline;
   top: 30px;
   left: -15px
 } 
-
-
-
-
-
 
 nav a:link, a:visited, a:active {
   text-decoration: none;
@@ -114,21 +112,22 @@ nav a:link, a:visited, a:active {
 
 nav a:hover {
   color: black !important;
-  text-decoration: underline !important;
-  transition: 0.9s;
+  text-shadow: 10px 5px 40px rgb(0, 0, 0);
 }
 
-nav a:after {transition: 0.9s;}
+/* nav a:after {transition: 0.9s;} */
 
 nav a {
   text-decoration: none;
   font-size: 3em;
   color: darkred !important;
+  transition: 0.5s;
 }
 
 
 .nav-link {
-  margin-right: 20px;
+  margin: 10px;
+  padding: 10px;
   align-content: center;
   position: relative;
   display: inline;
@@ -156,11 +155,13 @@ nav a {
 }
 
 
-/*  footer */
+/* --------------------------------------------------------------------------------- */
+/* ---------------------------  footer  -------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
 
 footer {
   box-shadow: 0 5px 5px 0;
-  background-color: rgba(227, 235, 240, 0.877);
+  background-color: rgba(217, 220, 226, 0.85);
   border-radius: 0;
   margin-bottom: 3%;
   text-align: center;
@@ -172,26 +173,31 @@ footer {
     'footer-logo footer-logo footer-logo'
     'footer-contact footer-links footer-social-media'
     'footer-copyright footer-copyright footer-copyright';
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
   font-size: 20px !important;
   margin: 0 auto;
   align-content: center;
   padding: 2% 8%;
+  position: relative;
 }
 
 .footer-logo {
   grid-area: footer-logo; 
+  margin-bottom: 3%;
+  position: abolute;
 }
 
 .footer-contact {
   grid-area: footer-contact; 
   text-align: left;
+  line-height: 110%;
 }
 
 .footer-links {
   grid-area: footer-links;
   text-decoration: none;
-  
+  line-height: 100%;
 }
 
 .footer-links a::before {
@@ -201,27 +207,30 @@ footer {
 .footer-social-media {
   grid-area: footer-social-media; 
   display: block;
+  max-width: 80%;
 }
 
 .footer-copyright {
   grid-area: footer-copyright; 
-  padding-top: 2%;
+  padding-top: 4%;
 }
 
 .footer-icon {
-  border-radius: 50%;
+  border-radius: 5%;
   width: 45px;
-  padding: 2vh;
+  height: 45px;
+  padding-top: 12px;
   margin: 5px;
   text-decoration: none !important;
   color: white;
+  text-align: center;
 }
 
-.footer-icon:hover {animation: icon-animation 2s 1;}
+.footer-icon:hover {animation: icon-animation 2s 1; color: white;}
 
 @keyframes icon-animation { 
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
+  0% {transform: scale(1.0);}
+  100% {transform: scale(1.25);}
 }
 
 .fa-facebook {background-color: rgb(66, 103, 178);}
@@ -232,7 +241,9 @@ footer {
 .fa-pinterest {background-color: rgb(189,8,28);}
 .fa-tumblr {background-color: rgb(53, 70, 92);}
 
-@media screen and (max-width: 767px)  {
+
+
+@media only screen and (max-width: 767px)  {
 
   .container {
     padding-left: 0;
@@ -299,4 +310,13 @@ footer {
     border-radius: 0px !important;
   }
 
+  .footer-grid-container {
+    display: block;
+  }
+
+  .footer-contact, .footer-links, .footer-social-media, .footer-copyright {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+  }
 }
