@@ -1,4 +1,6 @@
 
+@import url(//db.onlinewebfonts.com/c/b26b20369adfef2b3d65d266e0625fe2?family=Gabriola);
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,7 +8,6 @@ html {
 body {
   background-color: lightskyblue;
   background-image: linear-gradient(to bottom, rgb(179, 236, 255), rgb(0, 134, 230));
-  height: 1800px;
   overflow: auto;
 }
 
@@ -21,16 +22,16 @@ body {
   box-shadow: 0 5px 5px 0;
   border-radius: 0 0 10px 10px !important;
   height: 700px;
-  animation: animation 20s infinite;
-  -webkit-animation: animation 20s infinite;    /*  safari compatibility */
-  -moz-animation:    animation 20s infinite;    /*  firefox compatibility */
-  -o-animation:      animation 20s infinite;    /*  opera compatibility */
+  animation: jumbotron-animation 20s infinite;
+  -webkit-animation: jumbotron-animation 20s infinite;    /*  safari compatibility */
+  -moz-animation:    jumbotron-animation 20s infinite;    /*  firefox compatibility */
+  -o-animation:      jumbotron-animation 20s infinite;    /*  opera compatibility */
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@keyframes animation {
+@keyframes jumbotron-animation {
   0%  {background-image: url('/assets/jumbotron/bristol.jfif'); transform:scale(1); opacity: 1.0;}
   10%  {background-image: url('/assets/jumbotron/bristol.jfif'); transform:scale(1); }
   25% {background-image: url('/assets/jumbotron/calgary.jfif'); transform:scale(1);}
@@ -70,9 +71,15 @@ body {
 
 nav {
   box-shadow: 0 5px 5px 0;
-  background-color: lightskyblue;
+  background-color: rgb(11, 139, 230);
   border-radius: 0 !important;
+  transition: 0.5s;
+  animation: nav-footer-icon-animation 1s 1;
 } 
+
+nav:hover {
+  padding: 10px;
+}
 
 .sticky {
   position: fixed !important;
@@ -88,46 +95,54 @@ nav {
 .nav-menu-hover {
   display: none;
   box-shadow: 5px 5px 5px 0px;
-  padding: 10px;
-  margin: 5px;
   position: absolute;
-  background-color: lightskyblue;
-  transition: 0.5s;
+  background-color: rgb(11, 139, 230);
+  transition: 0.9s;
+  text-align: left;
+  width: 120px;
+  overflow: hidden;
 }
+
+.nav-menu-hover .nav-link:hover {
+  color: black !important;
+  background-color: rgb(146, 199, 241, 0.9);
+  padding: 4px 35px 4px 20px;
+}
+
+.dropdown:hover .nav-menu-hover {
+  display: block;
+  top: 55px;
+  left: 5px;
+} 
 
 .navbar-right{
   float: right;
 }
 
 
-.dropdown:hover .nav-menu-hover {
-  display: inline;
-  top: 30px;
-  left: -15px
-} 
 
 nav a:link, a:visited, a:active {
   text-decoration: none;
 }
 
-nav a:hover {
+.active, nav .nav-link:hover {
   color: black !important;
-  text-shadow: 10px 5px 40px rgb(0, 0, 0);
+  background-color: rgb(146, 199, 241, 0.9);
+  padding: 21px 10px;
 }
 
-/* nav a:after {transition: 0.9s;} */
+nav a:after {transition: 0.9s;}
 
 nav a {
   text-decoration: none;
   font-size: 3em;
-  color: darkred !important;
+  color: rgb(240, 234, 234) !important;
   transition: 0.5s;
 }
 
 
 .nav-link {
   margin: 10px;
-  padding: 10px;
   align-content: center;
   position: relative;
   display: inline;
@@ -174,8 +189,8 @@ footer {
     'footer-contact footer-links footer-social-media'
     'footer-copyright footer-copyright footer-copyright';
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  font-size: 20px !important;
+  grid-gap: 2%;
+  font-size: 23px !important;
   margin: 0 auto;
   align-content: center;
   padding: 2% 8%;
@@ -207,7 +222,6 @@ footer {
 .footer-social-media {
   grid-area: footer-social-media; 
   display: block;
-  max-width: 80%;
 }
 
 .footer-copyright {
@@ -226,11 +240,15 @@ footer {
   text-align: center;
 }
 
-.footer-icon:hover {animation: icon-animation 2s 1; color: white;}
+.footer-icon:hover {
+  animation: nav-footer-icon-animation 2s 1; 
+  color: white;
+}
 
-@keyframes icon-animation { 
+@keyframes nav-footer-icon-animation { 
   0% {transform: scale(1.0);}
-  100% {transform: scale(1.25);}
+  50% {transform: scale(1.25);}
+  100% {transform: scale(1.0);}
 }
 
 .fa-facebook {background-color: rgb(66, 103, 178);}
@@ -241,6 +259,17 @@ footer {
 .fa-pinterest {background-color: rgb(189,8,28);}
 .fa-tumblr {background-color: rgb(53, 70, 92);}
 
+
+/* --------------------------------------------------------------------------------- */
+/* -------------------- contents/ body  -------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+.contents {
+  height: 1000px;
+  box-shadow: 0 5px 5px 0;
+  margin-bottom: 2%;
+  background-color: rgb(146, 199, 241, 0.9);
+}
 
 
 @media only screen and (max-width: 767px)  {
