@@ -15,8 +15,22 @@ jumbotronImg[4] = "../assets/jumbotron/losAngeles.jfif";
 jumbotronImg[5] = "../assets/jumbotron/sanfransisco.jfif";
 
 var imgLoad = new Array();
-for(var i=0; i<jumbotronImg.length; i++) {
-        imgLoad[i] = new Image();
-        imgLoad[i].src = jumbotronImg[i];
-    }
+for(var i=0; i<jumbotronImg.length; i++) 
+{
+    imgLoad[i] = new Image();
+    imgLoad[i].src = jumbotronImg[i];
+}
+
+
+// var para = document.getElementsByClassName("para");
+
+
+// for (var i=0 ; i<para.length; i++)
+// {
+//     // para[i].style.textAlign = "right";
+//     para[i].innerText = "NEW erthyjukyiiiiiiiiiiiiiiiii,.";
+// }
+
+// var p = document.getElementsById("para1");
+// p.style.textAlign = "center";
 

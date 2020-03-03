@@ -1,5 +1,5 @@
 
-@import url(//db.onlinewebfonts.com/c/b26b20369adfef2b3d65d266e0625fe2?family=Gabriola);
+@import url(/fonts/Gabriola.ttf);
 
 html {
   scroll-behavior: smooth;
@@ -12,8 +12,8 @@ body {
 }
 
 .font {
-  font-family: Gabriola, Times, serif;
-  font-size: 1em !important;
+  font-family: Gabriola, Times, serif !important;
+  font-size: 1em;
 }
 
 /*  index Jumbotron  */
@@ -66,14 +66,15 @@ body {
 .img-fluid {
   max-width: 300px;
   max-height: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 nav {
   box-shadow: 0 5px 5px 0;
-  background-color: rgb(11, 139, 230);
+  background-color: rgb(211, 230, 243);
+  color: rgb(105, 4, 4) !important;
   border-radius: 0 !important;
-  transition: 0.5s;
+  transition: 0.1s ease;
   animation: nav-footer-icon-animation 1s 1;
 } 
 
@@ -96,12 +97,14 @@ nav:hover {
   display: none;
   box-shadow: 5px 5px 5px 0px;
   position: absolute;
-  background-color: rgb(11, 139, 230);
-  transition: 0.9s;
+  background-color: rgb(211, 230, 243);
+  transition: 0.1s ease-in;
   text-align: left;
   width: 120px;
   overflow: hidden;
 }
+
+.nav-link {color: rgb(150, 3, 33) !important;}
 
 .nav-menu-hover .nav-link:hover {
   color: black !important;
@@ -131,13 +134,13 @@ nav a:link, a:visited, a:active {
   padding: 21px 10px;
 }
 
-nav a:after {transition: 0.9s;}
+nav a:after {transition: 0.9s ease;}
 
 nav a {
   text-decoration: none;
   font-size: 3em;
   color: rgb(240, 234, 234) !important;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 
@@ -194,7 +197,6 @@ footer {
   margin: 0 auto;
   align-content: center;
   padding: 2% 8%;
-  position: relative;
 }
 
 .footer-logo {
@@ -265,10 +267,84 @@ footer {
 /* --------------------------------------------------------------------------------- */
 
 .contents {
-  height: 1000px;
+  height: 2000px;
   box-shadow: 0 5px 5px 0;
   margin-bottom: 2%;
   background-color: rgb(146, 199, 241, 0.9);
+}
+
+.intro-para {
+  padding: 4%;
+}
+
+.para {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.para::first-letter {
+  font-size: 2em;
+}
+
+.contents h1 {text-align: center; padding: 1%; font-size: 4em;}
+
+.home-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  margin: 0 auto;
+  align-content: center;
+  padding: 4% 8%;
+  position: relative;
+}
+
+.grid-welcome, .grid-contents, .grid-gallery, .grid-subscribe {
+  box-shadow: 2px 3px 2px 1px;
+  position: relative;
+}
+
+.hover-display {
+  display: block;
+  position: absolute;
+  text-align: center;
+  font-size: 1.5em;
+  overflow: hidden;
+  width: 0%;
+  height: 0;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  background-color: rgba(95, 161, 163, 0.86);
+  transition: .2s ease;
+}
+
+.grid-contents:hover .hover-display,
+.grid-welcome:hover .hover-display,
+.grid-gallery:hover .hover-display,
+.grid-subscribe:hover .hover-display {
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.hover-display p {padding: 30% 10% 5% 10%;}
+
+.hover-display a {
+  padding: 5px 20px;
+  background-color: rgb(228, 113, 84);
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.hover-display a:hover {letter-spacing: 2px;}
+
+.description-para {
+  text-align: justify; 
+  font-size: 2.5em;
+  padding: 0 5%;
 }
 
 
