@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta data (description, keywords, author, robots etc) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="One stop location to help you achieve your dream of becoming an architectural Photographer.">
+    <meta name="Keywords" content="photography,photo,professional,architecture,buildings,skycrapper,SLR,DSLR,camera,landscape,pro">
+    <meta name="Author" content="Mathew George">
+    <meta name="Robots" content="noindex, nofollow"> <!-- robots crawling disabled, since this isn't real website -->
 
     <!-- fav icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -19,7 +24,7 @@
     <!-- icon library (footer) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- javascript -->
+    <!-- vanilla javascript -->
     <script type="text/javascript" src="script/main.js"></script>
 
     <!-- CSS Style Sheet -->
@@ -31,6 +36,7 @@
 <body>
     <header class="container">
 
+        <!-- jumbotron area, with keyframe animation background. Index page only -->
         <div class="jumbotron">
             <div class="container-fluid font">
                 <h1 class="font-weight-bold">Bliss Bliss!</h1>
@@ -42,23 +48,28 @@
 
     <main class="container">
 
-        <!-- logo and nav menus -->
+        <!-- navigation menu bar -->
         <nav class="navbar navbar-expand-md font container-fluid sticky-top" id="navbar">
 
+            <!-- brand logo with an alt decription, linked to index.html -->
             <a class="navbar-brand" href="index.html"> <img class="img-fluid" src="assets/Bliss-logo-name.png" alt="Bliss Photgraphy logo"></a>
 
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#nav-menu" aria-expanded="true">
+            <!-- burger menu bars, appears only on screen width of 767px and smaller -->
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
 
+            <!-- navigations on menu bar -->
             <div class="collapse navbar-collapse" id="nav-menu" aria-expanded="false">
                 <ul class="navbar-nav" id="collapsed_menu">
                     <li class="nav-item"> <a class="nav-link active" href="#">Home</a> </li>
                     <li class="nav-item"> 
                         <div class="dropdown">
                             <a class="nav-link" href="#">Bliss Mag </a>
+
+                            <!-- dropdown links on mouse hover -->
                             <div class="nav-menu-hover ">
                                 <a class="nav-link " href="#">Welcome</a>
                                 <a class="nav-link" href="#">Contents</a>
@@ -69,14 +80,16 @@
                     </li>
                 </ul>
 
+                <!-- report.html link -->
                 <ul class="navbar-nav navbar-right">
                     <li class="nav-item"><a class="nav-link" href="report.html">Report</a></li>
                 </ul>
             </div>
 
-        </nav>
+        </nav> <!-- end of navigation bar -->
 
 
+        <!-- main page contents -->
         <div class="contents container">
            
             <div class="font intro-para">
@@ -86,62 +99,71 @@
 
             <h1 class="font">Bliss Magazine</h1>
 
-            <div class="home-grid-container font-weight-bold">
-                <div class="grid-welcome">
-                    <figure class="index-figure">
-                        <img class="image-fluid img-thumbnail" src="assets/grid-container/italy.jfif" alt="A photo of Reggio Emilia AV Mediopadana in Italy.">
-                        <!-- <figcaption>Reggio Emilia AV Mediopadana in Italy</figcaption> -->
-                    </figure>
+            <!-- image grid container with links to other pages  -->
+            <section class="home-grid-container font-weight-bold">
 
+                <!-- grid 1  -->
+                <div class="grid-welcome">
+                    <img class="image-fluid img-thumbnail" src="assets/grid-container/italy.jfif" alt="A photo of Reggio Emilia AV Mediopadana in Italy.">
+
+                    <!-- display on mouse hover - link to Bliss Mag's content page -->
                     <div class="hover-display">
                         <p>Explore our award winning Bliss Mag.</p>
                         <a href="contents/welcome.html">Welcome</a>
                     </div>
                 </div>
 
+                <!-- grid 2 -->
                 <div class="grid-contents">
-                    <!-- <figure class="index-figure"> -->
-                        <img class="image-fluid img-thumbnail" src="assets/grid-container/berlin.jfif" alt="A photo of an appartment building in Berlin, Germany.">
-                        <!-- <figcaption>An appartment Building in Germany</figcaption> -->
-                    <!-- </figure> -->
-
+                    <img class="image-fluid img-thumbnail" src="assets/grid-container/berlin.jfif" alt="A photo of an appartment building in Berlin, Germany.">
+                    
+                    <!-- display on mouse hover - link to Bliss Mag's content page -->
                     <div class="hover-display">
                         <p>Explore the contents in our Bliss Mag.</p>
-                        <a href="contents/welcome.html">Content</a>
+                        <a href="contents/content.html">Content</a>
                     </div>
                 </div>
 
+                <!-- grid 3 -->
                 <div class="grid-gallery">
-                    <figure class="index-figure">
-                        <img class="image-fluid img-thumbnail" src="assets/grid-container/losangeles.jfif" alt="A photo of the Broad building in Los Angeles.">
-                        <!-- <figcaption>The Broad, Los Angeles</figcaption> -->
-                    </figure>
+                    <img class="image-fluid img-thumbnail" src="assets/grid-container/losangeles.jfif" alt="A photo of the Broad building in Los Angeles.">
 
+                    <!-- display on mouse hover - link to Bliss Mag's gallery page -->
                     <div class="hover-display">
                         <p>Checkout the shots in our gallery.</p>
-                        <a href="contents/welcome.html">Gallery</a>
+                        <a href="contents/gallery.html">Gallery</a>
                     </div>
                 </div>
 
+                <!-- grid 4 -->
                 <div class="grid-subscribe">
-                    <figure class="index-figure">
-                        <img class="image-fluid img-thumbnail" src="assets/grid-container/colourful.jfif" alt="A photo of a colourful architectural building corner.">
-                        <!-- <figcaption>A Colourful Appartment Building</figcaption> -->
-                    </figure>
+                    <img class="image-fluid img-thumbnail" src="assets/grid-container/colourful.jfif" alt="A photo of a colourful architectural building corner.">
 
+                    <!-- display on mouse hover - link to Bliss Mag's subscribe page -->
                     <div class="hover-display">
                         <p>Subscribe for tips, hacks and notifications.</p>
-                        <a href="contents/welcome.html">Subscribe</a>
+                        <a href="contents/subscribe.html">Subscribe</a>
                     </div>
                 </div>
-            </div>
+            </section><br>
+            <!--  end of grid container -->
+
            
+            <!-- section 3 -->
+            <section class="intro-para mb-3">
+                <h1 class="font">Peak Shots</h1>
+                <p class="para font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro necessitatibus temporibus autem, quaerat esse consequuntur veritatis veniam quia libero, unde culpa omnis? Sed quam nemo esse at assumenda eum quas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta veritatis ducimus molestiae laudantium rem. Molestias, neque? Quas sed accusamus illo debitis exercitationem sint totam quae, aperiam quod, dicta, repellendus tempora.</p>
 
-            <h1 class="font">Aimiing Higher!</h1>
-            <article class="container">
-                <p class="description-para font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet iste reprehenderit magni aliquid deserunt rerum et nostrum sint ipsum saepe numquam accusamus explicabo, voluptate molestias neque dolorum quas fugit aspernatur!</p>
+                <!-- an independant article within a section  -->
+                <article class="mb-3">
+                    <h2 class="font">Aiming Higher, literally!</h2>
+                    <p class="description-para font pb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet iste reprehenderit magni aliquid deserunt rerum et nostrum sint ipsum saepe numquam accusamus explicabo, voluptate molestias neque dolorum quas fugit aspernatur!</p>
+                </article>
 
-            </article>
+                <p class="para font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nostrum laborum accusantium nesciunt. Quos iste aliquid, sunt officia, maiores rerum saepe, laborum ullam ipsam quia animi ab repellat explicabo consectetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus minus officiis similique repudiandae voluptate explicabo vero, nam culpa expedita quod fuga, placeat hic ratione harum et, corporis deleniti? Velit, eius.</p>
+            </section>
+
+            
             
         </div>
 
@@ -151,16 +173,18 @@
             <!-- footer grid container -->
             <div class="navbar font container-fluid footer-grid-container">
 
-                <div class="footer-logo nav-br"><a clas=="navbar-brand" href="index.html"><img class="img-fluid" src="assets/Bliss-logo-name.png" alt="Bliss Photgraphy logo"></a></div>
+                <!-- logo grid area -->
+                <div class="footer-logo nav-br pt-5"><a clas=="navbar-brand" href="index.html"><img class="img-fluid" src="assets/Bliss-logo-name.png" alt="Bliss Photgraphy logo"></a></div>
 
                 <!-- contact grid area -->
                 <div class="footer-contact">
                     <p class="font-weight-bold">Stop by:</p>
                     <p>Bliss Photography Inc. </br>
                         Suite # 94 </br>
-                        65 Canary Wharf Drive </br>
-                        LN10 6BT </br>
-                        Ph: +44 123 4567 890
+                        65 Canary Wharf</br>
+                        London, LN10 6BT </br>
+                        Ph: +44 123 4567 890 <br>
+                        <a href="mailto:info@domain.com" target="_top">Email Us!</a>
                     </p>
                 </div>
 
@@ -168,11 +192,12 @@
                 <div class="footer-links">
                     <p class="font-weight-bold">Quick Links:</p>
                     <a clas==" " href="index.html">Home</a> <br>
-                    <a clas==" " href="index.html">Bliss Mag</a> <br>
-                    <a clas==" " href="index.html">Welcome</a> <br>
-                    <a clas==" " href="index.html">Mag - Page 2</a> <br>
-                    <a clas==" " href="index.html">Mag - Page 3</a> <br>
-                    <a clas==" " href="index.html">Mag - Page 4</a>
+                    <a clas==" " href="contents/welcome.html">Bliss Mag</a> <br>
+                    <a clas==" " href="contents/welcome.html">Welcome</a> <br>
+                    <a clas==" " href="contents/contents.html">Contents</a> <br>
+                    <a clas==" " href="contents/gallery.html">Gallery</a> <br>
+                    <a clas==" " href="contents/subscribe.html">Subscribe</a> <br>
+                    <a clas==" " href="report.html">Report</a>
                 </div>
 
                 <!-- social media icons -->
@@ -189,10 +214,13 @@
                 </div>
 
                 <!-- footer - copyright signage -->
-                <div class="footer-copyright"> &copy; Copyright 2020</div>
+                <div class="footer-copyright"> &copy; Copyright 2020 All rights reserved.</div>
 
             </div>
+            <!-- end of footer grid area -->
+
         </footer>
+        <!-- end of footer area -->
 
     </main>
 
