@@ -74,8 +74,8 @@ nav {
   background-color: rgb(211, 230, 243);
   color: rgb(105, 4, 4) !important;
   border-radius: 0 !important;
-  transition: 0.1s ease;
-  animation: nav-footer-icon-animation 1s 1;
+  transition: 0.4s ease;
+  animation: nav-footer-icon-animation 1.2s 1;
 } 
 
 nav:hover {
@@ -83,8 +83,9 @@ nav:hover {
 }
 
 .sticky {
-  position: fixed !important;
+  position: sticky !important;
   top: 0 !important;
+  z-index: 10;
 }
 
 
@@ -108,7 +109,6 @@ nav:hover {
 
 .nav-menu-hover .nav-link:hover {
   color: black !important;
-  background-color: rgb(146, 199, 241, 0.9);
   padding: 4px 35px 4px 20px;
 }
 
@@ -128,10 +128,10 @@ nav a:link, a:visited, a:active {
   text-decoration: none;
 }
 
-.active, nav .nav-link:hover {
-  color: black !important;
-  background-color: rgb(146, 199, 241, 0.9);
-  padding: 21px 10px;
+.active {padding: 17px 15px;}
+
+.active:hover, nav .nav-link:hover {
+  padding: 21px 15px;
 }
 
 nav a:after {transition: 0.9s ease;}
@@ -183,6 +183,7 @@ footer {
   border-radius: 0;
   margin-bottom: 3%;
   text-align: center;
+  height: 100%;
 }
 
 .footer-grid-container {
@@ -192,11 +193,12 @@ footer {
     'footer-contact footer-links footer-social-media'
     'footer-copyright footer-copyright footer-copyright';
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2%;
+  grid-gap: 5%;
   font-size: 23px !important;
   margin: 0 auto;
   align-content: center;
   padding: 2% 8%;
+  width: 90%;
 }
 
 .footer-logo {
@@ -224,6 +226,7 @@ footer {
 .footer-social-media {
   grid-area: footer-social-media; 
   display: block;
+  height: 100%;
 }
 
 .footer-copyright {
@@ -263,7 +266,7 @@ footer {
 
 
 /* --------------------------------------------------------------------------------- */
-/* -------------------- contents/ body  -------------------------------------------- */
+/* -------------------- index.html --> contents/ body  ----------------------------- */
 /* --------------------------------------------------------------------------------- */
 
 .contents {
@@ -331,12 +334,13 @@ footer {
 .hover-display p {padding: 20% 10% 5%;}
 
 .hover-display a {
-  padding: 5px 20px;
+  padding: 3% 10%;
   background-color: rgb(228, 113, 84);
   text-decoration: none;
   color: black;
   border-radius: 5px;
   transition: 0.5s;
+  font-size: 1.65em;
 }
 
 .hover-display a:hover {letter-spacing: 2px;}
@@ -365,15 +369,11 @@ article h2 {
 @media only screen and (max-width: 767px)  {
 
   .container {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 auto;
   }
 
   nav {
     position: sticky;
-    overflow: auto;
   }
 
   .collapse {
@@ -438,4 +438,11 @@ article h2 {
     text-align: center;
     padding-top: 25px;
   }
+
+  .home-grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section {padding-top: 15% !important;}
 }

@@ -1,4 +1,9 @@
 
+//  ---------------------------------------------------------------------
+//  ---------------------------------------------------------------------
+//  ------------------- vanilla javaScript ------------------------------
+//  ---------------------------------------------------------------------
+//  ---------------------------------------------------------------------
 
 
 
@@ -22,15 +27,59 @@ for(var i=0; i<jumbotronImg.length; i++)
 }
 
 
-// var para = document.getElementsByClassName("para");
 
 
-// for (var i=0 ; i<para.length; i++)
-// {
-//     // para[i].style.textAlign = "right";
-//     para[i].innerText = "NEW erthyjukyiiiiiiiiiiiiiiiii,.";
-// }
+//  ---------------------------------------------------------------------
+//  ---------------------------------------------------------------------
+//  ------------------------ jQuery -------------------------------------
+//  ---------------------------------------------------------------------
+//  ---------------------------------------------------------------------
 
-// var p = document.getElementsById("para1");
-// p.style.textAlign = "center";
+
+
+window.onload = function()
+{
+
+  // jQuery load console.log confirmation
+  if (window.jQuery){
+    console.log("jQuery has been loaded succesfully!");
+  }
+  else{
+    console.log("jQuery failed to load.");
+  }
+
+}
+
+// 'active' class nav menu link will appear with a darker background
+$(function(){
+  $(".active").css("background-color", "rgb(146, 199, 241, 0.8)");
+  }
+)
+
+
+
+
+
+
+
+// on mouse hover, all 'nav-link' classes would have a darker background
+$(".nav-link").mouseenter(
+  function(){
+    $(this).css("background-color", "rgb(146, 199, 241, 0.9)");
+  }
+)
+
+// after mouse hover, all .nav-link would default to its initial background colour
+$(".nav-link").mouseleave(
+  function(){
+    $(this).css("background-color", "rgb(211, 230, 243)");
+  }
+)
+
+// 'active' class continue to have darker background after 'nav-link' mouse leave
+$(".active").mouseleave(
+  function(){
+    $(this).css("background-color", "rgb(146, 199, 241, 0.8)");
+  }
+)
 

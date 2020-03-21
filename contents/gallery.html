@@ -8,12 +8,12 @@
     <meta name="Description" content="One stop location to help you achieve your dream of becoming an architectural Photographer.">
     <meta name="Keywords" content="photography,photo,professional,architecture,buildings,skycrapper,SLR,DSLR,camera,landscape,pro">
     <meta name="Author" content="Mathew George">
-    <meta name="Robots" content="noindex, nofollow"> <!-- robots crawling disabled, since this isn't real website -->
+    <meta name="Robots" content="noindex, nofollow"> <!-- robots crawling disabled, since this isn't a real website -->
 
     <!-- fav icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
 
     <!-- CSS Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -24,34 +24,24 @@
     <!-- icon library (footer) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- CSS Style Sheet -->
-    <link rel="stylesheet" href="style/main.css">
+    <!-- vanilla javascript -->
+    <script type="text/javascript" src="../script/main.js"></script>
 
-    
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="../style/main.css">
 
     <!-- page title -->
-    <title>Home  &nbsp; | &nbsp;  Bliss Photography</title>
+    <title>Gallery  &nbsp; | &nbsp;  Bliss Photography</title>
 </head>
 <body>
-    <header class="container">
-
-        <!-- jumbotron area, with keyframe animation background. Index page only -->
-        <div class="jumbotron">
-            <div class="container-fluid font">
-                <h1 class="">Bliss Bliss!</h1>
-                <p>Welcome to the land of Bliss Photography, where you'll find an infinite amount of resources to capture the perfect architrecture shots.</p>
-            </div>
-        </div>
-
-    </header>
 
     <main class="container">
 
         <!-- navigation menu bar -->
-        <nav class="navbar navbar-expand-md font container-fluid sticky" id="navbar">
+        <nav class="navbar navbar-expand-md font container-fluid sticky-top" id="navbar">
 
             <!-- brand logo with an alt decription, linked to index.html -->
-            <a class="navbar-brand" href="index.html"> <img class="img-fluid" src="assets/Bliss-logo-name.png" alt="Bliss Photgraphy logo"></a>
+            <a class="navbar-brand" href="../index.html"> <img class="img-fluid" src="../assets/Bliss-logo-name.png" alt="Bliss Photgraphy logo"></a>
 
             <!-- burger menu bars, appears only on screen width of 767px and smaller -->
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false">
@@ -63,17 +53,17 @@
             <!-- navigations on menu bar -->
             <div class="collapse navbar-collapse" id="nav-menu" aria-expanded="false">
                 <ul class="navbar-nav" id="collapsed_menu">
-                    <li class="nav-item"> <a class="nav-link active" href="index.html">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../index.html">Home</a> </li>
                     <li class="nav-item"> 
                         <div class="dropdown">
-                            <a class="nav-link" href="#">Bliss Mag </a>
+                            <a class="nav-link active" href="../index.html">Bliss Mag </a>
 
                             <!-- dropdown links on mouse hover -->
                             <div class="nav-menu-hover ">
-                                <a class="nav-link" href="/contents/welcome.html">Welcome</a>
-                                <a class="nav-link" href="/contents/contents.html">Contents</a>
-                                <a class="nav-link" href="/contents/gallery.html">Gallery</a>
-                                <a class="nav-link" href="/contents/subscribe.html">Subscribe</a>
+                                <a class="nav-link " href="welcome.html">Welcome</a>
+                                <a class="nav-link" href="contents.html">Contents</a>
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                                <a class="nav-link" href="subscribe.html">Subscribe</a>
                             </div>
                         </div>
                     </li>
@@ -86,71 +76,67 @@
             </div>
 
         </nav> <!-- end of navigation bar -->
-
-
+        
         <!-- main page contents -->
         <div class="contents container">
            
-            <section class="font intro-para">
+            <div class="font intro-para">
                 <p class="para">Welcome to the land of Bliss Photography, where you'll find an infinite amount of resources to capture the perfect architrecture shots. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione! </p>
                 <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum, odio consequatur quibusdam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, perferendis laboriosam nemo corrupti inventore reprehenderit ab eius autem iste quis voluptate dicta ipsam dolorum molestiae obcaecati nesciunt alias. Voluptatum, ipsa.</p>
-            </section>
+            </div>
 
-            
+            <h1 class="font">Bliss Magazine</h1>
 
-            <section>
-                <h1 class="font">Bliss Magazine</h1>
-                <!-- image grid container with links to other pages  -->
+            <!-- image grid container with links to other pages  -->
+            <section class="grid-section">
+
                 <div class="home-grid-container font-weight-bold">
+                <!-- grid 1  -->
+                <div class="grid-welcome">
+                    <img class="image-fluid img-thumbnail" src="assets/grid-container/italy.jfif" alt="A photo of Reggio Emilia AV Mediopadana in Italy.">
 
-                    <!-- grid 1  -->
-                    <div class="grid-welcome">
-                        <img class="image-fluid img-thumbnail" src="assets/grid-container/italy.jfif" alt="A photo of Reggio Emilia AV Mediopadana in Italy.">
-
-                        <!-- display on mouse hover - link to Bliss Mag's content page -->
-                        <div class="hover-display">
-                            <p>Explore our award winning Bliss Mag.</p>
-                            <a class="font"  href="contents/welcome.html">Welcome</a>
-                        </div>
-                    </div>
-
-                    <!-- grid 2 -->
-                    <div class="grid-contents">
-                        <img class="image-fluid img-thumbnail" src="assets/grid-container/berlin.jfif" alt="A photo of an appartment building in Berlin, Germany.">
-                        
-                        <!-- display on mouse hover - link to Bliss Mag's content page -->
-                        <div class="hover-display">
-                            <p>Explore the contents in our Bliss Mag.</p>
-                            <a class="font" href="contents/content.html">Content</a>
-                        </div>
-                    </div>
-
-                    <!-- grid 3 -->
-                    <div class="grid-gallery">
-                        <img class="image-fluid img-thumbnail" src="assets/grid-container/losangeles.jfif" alt="A photo of the Broad building in Los Angeles.">
-
-                        <!-- display on mouse hover - link to Bliss Mag's gallery page -->
-                        <div class="hover-display">
-                            <p>Checkout the shots in our gallery.</p>
-                            <a class="font" href="contents/gallery.html">Gallery</a>
-                        </div>
-                    </div>
-
-                    <!-- grid 4 -->
-                    <div class="grid-subscribe">
-                        <img class="image-fluid img-thumbnail" src="assets/grid-container/colourful.jfif" alt="A photo of a colourful architectural building corner.">
-
-                        <!-- display on mouse hover - link to Bliss Mag's subscribe page -->
-                        <div class="hover-display">
-                            <p>Subscribe for tips, hacks and notifications.</p>
-                            <a class="font" href="contents/subscribe.html">Subscribe</a>
-                        </div>
+                    <!-- display on mouse hover - link to Bliss Mag's content page -->
+                    <div class="hover-display">
+                        <p>Explore our award winning Bliss Mag.</p>
+                        <a href="contents/welcome.html">Welcome</a>
                     </div>
                 </div>
-                <!--  end of grid container -->
 
-            </section>
-            
+                <!-- grid 2 -->
+                <div class="grid-contents">
+                    <img class="image-fluid img-thumbnail" src="assets/grid-container/berlin.jfif" alt="A photo of an appartment building in Berlin, Germany.">
+                    
+                    <!-- display on mouse hover - link to Bliss Mag's content page -->
+                    <div class="hover-display">
+                        <p>Explore the contents in our Bliss Mag.</p>
+                        <a href="contents/content.html">Content</a>
+                    </div>
+                </div>
+
+                <!-- grid 3 -->
+                <div class="grid-gallery">
+                    <img class="image-fluid img-thumbnail" src="assets/grid-container/losangeles.jfif" alt="A photo of the Broad building in Los Angeles.">
+
+                    <!-- display on mouse hover - link to Bliss Mag's gallery page -->
+                    <div class="hover-display">
+                        <p>Checkout the shots in our gallery.</p>
+                        <a href="contents/gallery.html">Gallery</a>
+                    </div>
+                </div>
+
+                <!-- grid 4 -->
+                <div class="grid-subscribe">
+                    <img class="image-fluid img-thumbnail" src="assets/grid-container/colourful.jfif" alt="A photo of a colourful architectural building corner.">
+
+                    <!-- display on mouse hover - link to Bliss Mag's subscribe page -->
+                    <div class="hover-display">
+                        <p>Subscribe for tips, hacks and notifications.</p>
+                        <a href="contents/subscribe.html">Subscribe</a>
+                    </div>
+                </div>
+                </div>
+            </section><br>
+            <!--  end of grid container -->
 
            
             <!-- section 3 -->
@@ -175,14 +161,14 @@
         <footer class="container">
 
             <!-- footer grid container -->
-            <div class="navbar font footer-grid-container mb-5">
+            <div class="navbar font container-fluid footer-grid-container">
 
                 <!-- logo grid area -->
-                <div class="footer-logo nav-br pt-5"><a clas=="navbar-brand" href="index.html"><img class="img-fluid" src="assets/Bliss-logo-name.png" alt="Bliss Photgraphy logo"></a></div>
+                <div class="footer-logo nav-br pt-5"><a clas=="navbar-brand" href="index.html"><img class="img-fluid" src="../assets/Bliss-logo-name.png" alt="Bliss Photgraphy logo"></a></div>
 
                 <!-- contact grid area -->
                 <div class="footer-contact">
-                    <p class="font-weight-bold">Stop by:</p>
+                    <p class="font-weight-bold footer-header">Stop by:</p>
                     <p>Bliss Photography Inc. </br>
                         Suite # 94 </br>
                         65 Canary Wharf</br>
@@ -194,7 +180,7 @@
 
                 <!-- links grid area -->
                 <div class="footer-links">
-                    <p class="font-weight-bold">Quick Links:</p>
+                    <p class="font-weight-bold footer-header">Quick Links:</p>
                     <a clas==" " href="index.html">Home</a> <br>
                     <a clas==" " href="contents/welcome.html">Bliss Mag</a> <br>
                     <a clas==" " href="contents/welcome.html">Welcome</a> <br>
@@ -207,7 +193,7 @@
                 <!-- social media icons -->
                 <!-- icons imported. Custom styled -->
                 <div class="footer-social-media">
-                    <p class="font-weight-bold">Find us here:</p>
+                    <p class="font-weight-bold footer-header">Find us here:</p>
                     <a href="#" class="footer-icon fa fa-facebook"></a>
                     <a href="#" class="footer-icon fa fa-twitter"></a>
                     <a href="#" class="footer-icon fa fa-linkedin"></a>
@@ -218,7 +204,7 @@
                 </div>
 
                 <!-- footer - copyright signage -->
-                <div class="footer-copyright pb-5"> &copy; Copyright 2020 All rights reserved.</div>
+                <div class="footer-copyright"> &copy; Copyright 2020 All rights reserved.</div>
 
             </div>
             <!-- end of footer grid area -->
@@ -228,14 +214,9 @@
 
     </main>
 
-    
-    <!-- jQuery -->
-    <script type="text/javascript" src='script/jQuery.js'></script>
-
-    <!-- vanilla javascript and jquery -->
-    <script type="text/javascript" src='script/main.js'></script>
 
     
+
 
 </body>
 </html>
