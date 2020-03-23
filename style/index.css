@@ -1,0 +1,63 @@
+/* --------------------------------------------------------------------------------- */
+/* -------------------- index.html --> contents/ body  ----------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+  
+  .home-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2%;
+    margin: 0 auto;
+    align-content: center;
+    padding: 4% 8%;
+    position: relative;
+  }
+  
+  .grid-welcome, .grid-contents, .grid-gallery, .grid-subscribe {
+    box-shadow: 2px 3px 2px 1px;
+    position: relative;
+  }
+  
+  .hover-display {
+    display: block;
+    position: absolute;
+    text-align: center;
+    font-size: 1.5em;
+    overflow: hidden;
+    width: 0%;
+    height: 0;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    background-color: rgba(95, 161, 163, 0.86);
+    transition: .2s ease;
+  }
+  
+  .grid-contents:hover .hover-display,
+  .grid-welcome:hover .hover-display,
+  .grid-gallery:hover .hover-display,
+  .grid-subscribe:hover .hover-display {
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+  }
+  
+  .hover-display p {padding: 20% 10% 5%;}
+  
+  .hover-display a {
+    padding: 3% 10%;
+    background-color: rgb(228, 113, 84);
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-size: 1.65em;
+  }
+  
+  .hover-display a:hover {letter-spacing: 2px;}
+  
+  
+  
+  
+  

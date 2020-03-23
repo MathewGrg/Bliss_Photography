@@ -56,12 +56,6 @@ $(function(){
   }
 )
 
-
-
-
-
-
-
 // on mouse hover, all 'nav-link' classes would have a darker background
 $(".nav-link").mouseenter(
   function(){

@@ -1,0 +1,92 @@
+/* --------------------------------------------------------------------------------- */
+/* --------------------------- welcome.html ---------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+
+.header-img img {
+    width: 100%;
+    max-height: 400px;
+}
+
+figcaption {font-size: 1.7em !important;}
+
+.section-row {
+    display: flex;
+}
+
+div span {
+    display: flex;
+    justify-content: center;
+}
+
+span img {
+    width: 45%;
+    margin: 1%;
+}
+
+.column {
+    padding: 0.5%;
+    margin: 0.5%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(95, 158, 160, 0.3);
+    justify-content: center;
+    display: flex;
+}
+
+.column a {
+    padding: 0.35em;
+    background-color:rgb(95, 158, 160, 0.90);
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    font-size: 1.75em;
+    display: flex;
+    transition: 0.5s ease;
+    justify-content: center;
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;  /* Safari compatibilty */
+    text-orientation: upright;
+}
+
+.column a:hover {
+    background-color: rgb(48, 85, 87);
+    color: rgb(255, 255, 255);
+}
+
+.flex-para {
+    text-align: center;
+    font-size: 2em;
+}
+
+.flex-para::first-letter {
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 767px)  {
+
+    .img-span img {
+        width: 100%;
+        margin-top: 1%;
+    }    
+
+    .img-span {
+        flex-direction: column-reverse;
+    }
+
+    .section-row {
+        flex-direction: column;
+    }
+
+    .column {
+        top: 50%;
+        width: 90%;
+        padding: 5%;
+        margin: 5%;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: rgb(95, 158, 160, 0.3);
+    }
+
+    .column a {
+        background-image: linear-gradient(to bottom, rgb(65, 161, 65), rgb(0, 134, 230));
+    }
+}
