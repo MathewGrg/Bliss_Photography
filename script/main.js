@@ -29,6 +29,40 @@ for(var i=0; i<jumbotronImg.length; i++)
 
 
 
+
+// var to store the first-h1 class
+var firstH1 = document.querySelector(".first-h1");
+
+// inserting a new <p> whcih shows the current edition of the magazine
+firstH1.insertAdjacentHTML("afterend", "<p class='edition'># April 2020 Edition</p>");
+
+// setting the style for 'edition' class
+document.querySelector(".edition").setAttribute("style", 
+"font-size: 2em; background-color: rgb(40, 145, 220);" + 
+"border-radius: 10px; width: fit-content; padding: 0px 10px 0 10px;" + 
+"margin-bottom: 1em; color: rgb(2555, 255, 255)");
+
+
+
+
+
+
+
+var contentH2 = document.querySelectorAll(".article h2");
+for (i=0; i<contentH2.length; i++)
+{
+  contentH2[i].setAttribute("style", "font-size: 2.75em; margin-top: 1.5em;");
+}
+
+var para = document.querySelectorAll(".article .para");
+for (i=3; i<para.length; i++)
+{
+  para[i].setAttribute("style", "border: 1px solid rgb(0, 0, 0); border-top-style: none; padding: 0% 2% 0% 1%");
+}
+
+
+
+
 //  ---------------------------------------------------------------------
 //  ---------------------------------------------------------------------
 //  ------------------------ jQuery -------------------------------------
@@ -49,6 +83,12 @@ window.onload = function()
   }
 
 }
+
+
+
+//  --------------------------------------------------------------
+//  -------------------------  navbar ----------------------------
+//  --------------------------------------------------------------
 
 // 'active' class nav menu link will appear with a darker background
 $(function(){
@@ -77,3 +117,28 @@ $(".active").mouseleave(
   }
 )
 
+
+
+
+//  --------------------------------------------------------------
+//  ------------------  contents.html ----------------------------
+//  --------------------------------------------------------------
+
+
+
+// style for the tip toggle controller
+$(function(){
+  $(".article .toggle-text").css("background-color", "rgb(211, 230, 243)");
+  $(".article .toggle-text").css("width", "fit-content");
+  $(".article .toggle-text").css("border-radius", "10px");
+  $(".article .toggle-text").css("cursor", "pointer");
+  }
+)
+
+// expand /collapse the tips using a 'tips-siplay' class
+$(".article .toggle-text").click(
+  function() {
+    $(".article .tips").toggleClass("tips-display");
+    console.log("clicked");
+  }
+)

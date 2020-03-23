@@ -3,13 +3,6 @@
 /* --------------------------------------------------------------------------------- */
 
 
-.header-img img {
-    width: 100%;
-    max-height: 400px;
-}
-
-figcaption {font-size: 1.7em !important;}
-
 .section-row {
     display: flex;
 }
@@ -65,12 +58,13 @@ span img {
 @media only screen and (max-width: 767px)  {
 
     .img-span img {
-        width: 100%;
+        width: 98%;
         margin-top: 1%;
     }    
 
     .img-span {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .section-row {

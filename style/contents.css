@@ -1,0 +1,51 @@
+/* --------------------------------------------------------------------------------- */
+/* --------------------------- contents.html --------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+.tips-display {
+    display: none;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+}
+
+aside a {
+    padding: 0.5em;
+    margin: 1em;
+    width: 30%;
+    border-radius: 5px;
+    background-color: rgb(0, 128, 128);
+    text-decoration: none !important;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    text-align: center;
+    transition: 0.5s ease;
+    font-weight: 600;
+}
+
+aside a:hover {
+    background-color: rgb(4, 190, 190);
+    color: rgb(0, 0, 0);
+}
+
+q {
+    background-color: rgb(3, 204, 204);
+    padding: 0.15em;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+
+@media only screen and (max-width: 767px)  {
+
+    aside {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    aside a {
+        width: 85%;
+    }
+}
