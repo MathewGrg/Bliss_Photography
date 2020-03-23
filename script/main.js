@@ -47,13 +47,14 @@ document.querySelector(".edition").setAttribute("style",
 
 
 
-
+// all h2 tags in contents.html styled
 var contentH2 = document.querySelectorAll(".article h2");
 for (i=0; i<contentH2.length; i++)
 {
   contentH2[i].setAttribute("style", "font-size: 2.75em; margin-top: 1.5em;");
 }
 
+// dynamic <p> in contents.html, which diplays on click
 var para = document.querySelectorAll(".article .para");
 for (i=3; i<para.length; i++)
 {
@@ -153,6 +154,7 @@ $(".article .toggle-text").click(
 //  -----------------  subscribe.html ----------------------------
 //  --------------------------------------------------------------
 
+// dynamic submit button - text changes on click
 $(".submitBtn").click(function() {
   $(this).text("Form Submitted")
   }
@@ -162,3 +164,4 @@ $(".cleartBtn").click(function() {
   $(this).text("Form Cleared")
   }
 )
+
