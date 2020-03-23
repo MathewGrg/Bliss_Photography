@@ -1,0 +1,31 @@
+/* --------------------------------------------------------------------------------- */
+/* --------------------------- subscribe.html --------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+
+section-from {
+    display: flex;
+    align-content: center;
+}
+
+form {
+    /* justify-content: center; */
+    padding: 2em !important;
+    font-size: 2.5em !important;
+    background-color: rgb(5, 194, 194, 0.6);
+    border-radius: 5px;
+}
+
+.formBtn {
+    border-radius: 5px;
+    background-color: rgba(3, 66, 66, 0.6);
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 200px;
+    transition: 0.5s ease;
+    margin: 2%;
+}
+
+.formBtn:hover {
+    letter-spacing: 2px;
+}

@@ -127,11 +127,15 @@ $(".active").mouseleave(
 
 
 // style for the tip toggle controller
+var articleToggleText = {
+  background: "rgb(211, 230, 243)",
+  width: "fit-content",
+  borderRadius: "10px",
+  cursor: "pointer"
+}
+
 $(function(){
-  $(".article .toggle-text").css("background-color", "rgb(211, 230, 243)");
-  $(".article .toggle-text").css("width", "fit-content");
-  $(".article .toggle-text").css("border-radius", "10px");
-  $(".article .toggle-text").css("cursor", "pointer");
+  $(".article .toggle-text").css(articleToggleText);
   }
 )
 
@@ -139,6 +143,22 @@ $(function(){
 $(".article .toggle-text").click(
   function() {
     $(".article .tips").toggleClass("tips-display");
-    console.log("clicked");
+  }
+)
+
+
+
+
+//  --------------------------------------------------------------
+//  -----------------  subscribe.html ----------------------------
+//  --------------------------------------------------------------
+
+$(".submitBtn").click(function() {
+  $(this).text("Form Submitted")
+  }
+)
+
+$(".cleartBtn").click(function() {
+  $(this).text("Form Cleared")
   }
 )
